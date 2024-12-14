@@ -41,14 +41,23 @@ def create_user():
     if not user_id or not name:
         # Se manca uno dei due campi, ritorno un errore 400 con un messaggio JSON
         return jsonify({'error': 'Please provide both "userId" and "name"'}), 400
+    
+    result = dynamodb_client.get_item(
+        TableName=USERS_TABLE, Key={'userId': {'S': user_id}}
+    ) # Recupero l'elemento dalla tabella DynamoDB
+    
+    item = result.get('Item')
+    if not item:
+        # Inserisco l'elemento nella tabella DynamoDB
+        dynamodb_client.put_item(
+            TableName=USERS_TABLE, Item={'userId': {'S': user_id}, 'name': {'S': name}}
+        )
 
-	# Inserisco l'elemento nella tabella DynamoDB
-    dynamodb_client.put_item(
-        TableName=USERS_TABLE, Item={'userId': {'S': user_id}, 'name': {'S': name}}
-    )
-
-    # Ritorno i dati inseriti in formato JSON
-    return jsonify({'userId': user_id, 'name': name})
+        # Ritorno i dati inseriti in formato JSON
+        return jsonify({'userId': user_id, 'name': name})
+    else:
+        # Se l'elemento esiste già, ritorno un errore 409 con un messaggio JSON
+        return jsonify({'error': 'User with provided "userId" already exists'}), 409
 
 
 # Definisco ll'handler per l'errore 404 di una rotta non trovata

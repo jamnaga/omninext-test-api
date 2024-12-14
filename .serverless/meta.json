@@ -175,7 +175,7 @@
                     "Properties": {
                       "Code": {
                         "S3Bucket": "serverless-framework-deployments-eu-central-1-910b4ffb-a7fe",
-                        "S3Key": "serverless/omninext/dev/1734026140408-2024-12-12T17:55:40.408Z/omninext.zip"
+                        "S3Key": "serverless/omninext/dev/1734193667176-2024-12-14T16:27:47.176Z/omninext.zip"
                       },
                       "Handler": "wsgi_handler.handler",
                       "Runtime": "python3.12",
@@ -198,14 +198,14 @@
                       "ApiLogGroup"
                     ]
                   },
-                  "ApiLambdaVersionb5htO5SU9RaaZ0BjnsBBxQHMP1otUOXLOCLjKPaEN4": {
+                  "ApiLambdaVersionIq0y8qLHUQYrSWdf1XKZ2RD9iLmx2bC4uiWLe72ba3E": {
                     "Type": "AWS::Lambda::Version",
                     "DeletionPolicy": "Retain",
                     "Properties": {
                       "FunctionName": {
                         "Ref": "ApiLambdaFunction"
                       },
-                      "CodeSha256": "JR4ov4Qh/vbLkMJIYVKXf/fGbHa7GVcl01er+aV4UMc="
+                      "CodeSha256": "4RPEjoK6JfHy02OKQqDilHcMqpNEZW5u4byviO2fW00="
                     }
                   },
                   "ApiGatewayRestApi": {
@@ -330,7 +330,7 @@
                       "ApiLambdaPermissionApiGateway"
                     ]
                   },
-                  "ApiGatewayDeployment1734026129955": {
+                  "ApiGatewayDeployment1734193658468": {
                     "Type": "AWS::ApiGateway::Deployment",
                     "Properties": {
                       "RestApiId": {
@@ -413,7 +413,7 @@
                   "ApiLambdaFunctionQualifiedArn": {
                     "Description": "Current Lambda function version",
                     "Value": {
-                      "Ref": "ApiLambdaVersionb5htO5SU9RaaZ0BjnsBBxQHMP1otUOXLOCLjKPaEN4"
+                      "Ref": "ApiLambdaVersionIq0y8qLHUQYrSWdf1XKZ2RD9iLmx2bC4uiWLe72ba3E"
                     },
                     "Export": {
                       "Name": "sls-omninext-dev-ApiLambdaFunctionQualifiedArn"
@@ -474,7 +474,7 @@
                 "timeout": 6,
                 "runtime": "python3.12",
                 "vpc": {},
-                "versionLogicalId": "ApiLambdaVersionb5htO5SU9RaaZ0BjnsBBxQHMP1otUOXLOCLjKPaEN4"
+                "versionLogicalId": "ApiLambdaVersionIq0y8qLHUQYrSWdf1XKZ2RD9iLmx2bC4uiWLe72ba3E"
               }
             },
             "resources": {
@@ -692,7 +692,7 @@
                     "Properties": {
                       "Code": {
                         "S3Bucket": "serverless-framework-deployments-eu-central-1-910b4ffb-a7fe",
-                        "S3Key": "serverless/omninext/dev/1734026140408-2024-12-12T17:55:40.408Z/omninext.zip"
+                        "S3Key": "serverless/omninext/dev/1734193667176-2024-12-14T16:27:47.176Z/omninext.zip"
                       },
                       "Handler": "wsgi_handler.handler",
                       "Runtime": "python3.12",
@@ -715,14 +715,14 @@
                       "ApiLogGroup"
                     ]
                   },
-                  "ApiLambdaVersionb5htO5SU9RaaZ0BjnsBBxQHMP1otUOXLOCLjKPaEN4": {
+                  "ApiLambdaVersionIq0y8qLHUQYrSWdf1XKZ2RD9iLmx2bC4uiWLe72ba3E": {
                     "Type": "AWS::Lambda::Version",
                     "DeletionPolicy": "Retain",
                     "Properties": {
                       "FunctionName": {
                         "Ref": "ApiLambdaFunction"
                       },
-                      "CodeSha256": "JR4ov4Qh/vbLkMJIYVKXf/fGbHa7GVcl01er+aV4UMc="
+                      "CodeSha256": "4RPEjoK6JfHy02OKQqDilHcMqpNEZW5u4byviO2fW00="
                     }
                   },
                   "ApiGatewayRestApi": {
@@ -847,7 +847,7 @@
                       "ApiLambdaPermissionApiGateway"
                     ]
                   },
-                  "ApiGatewayDeployment1734026129955": {
+                  "ApiGatewayDeployment1734193658468": {
                     "Type": "AWS::ApiGateway::Deployment",
                     "Properties": {
                       "RestApiId": {
@@ -930,7 +930,7 @@
                   "ApiLambdaFunctionQualifiedArn": {
                     "Description": "Current Lambda function version",
                     "Value": {
-                      "Ref": "ApiLambdaVersionb5htO5SU9RaaZ0BjnsBBxQHMP1otUOXLOCLjKPaEN4"
+                      "Ref": "ApiLambdaVersionIq0y8qLHUQYrSWdf1XKZ2RD9iLmx2bC4uiWLe72ba3E"
                     },
                     "Export": {
                       "Name": "sls-omninext-dev-ApiLambdaFunctionQualifiedArn"
@@ -991,7 +991,7 @@
                 "timeout": 6,
                 "runtime": "python3.12",
                 "vpc": {},
-                "versionLogicalId": "ApiLambdaVersionb5htO5SU9RaaZ0BjnsBBxQHMP1otUOXLOCLjKPaEN4"
+                "versionLogicalId": "ApiLambdaVersionIq0y8qLHUQYrSWdf1XKZ2RD9iLmx2bC4uiWLe72ba3E"
               }
             },
             "resources": {
@@ -1221,7 +1221,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-eu-central-1-910b4ffb-a7fe",
-                  "S3Key": "serverless/omninext/dev/1734026140408-2024-12-12T17:55:40.408Z/omninext.zip"
+                  "S3Key": "serverless/omninext/dev/1734193667176-2024-12-14T16:27:47.176Z/omninext.zip"
                 },
                 "Handler": "wsgi_handler.handler",
                 "Runtime": "python3.12",
@@ -1244,14 +1244,14 @@
                 "ApiLogGroup"
               ]
             },
-            "ApiLambdaVersionb5htO5SU9RaaZ0BjnsBBxQHMP1otUOXLOCLjKPaEN4": {
+            "ApiLambdaVersionIq0y8qLHUQYrSWdf1XKZ2RD9iLmx2bC4uiWLe72ba3E": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "ApiLambdaFunction"
                 },
-                "CodeSha256": "JR4ov4Qh/vbLkMJIYVKXf/fGbHa7GVcl01er+aV4UMc="
+                "CodeSha256": "4RPEjoK6JfHy02OKQqDilHcMqpNEZW5u4byviO2fW00="
               }
             },
             "ApiGatewayRestApi": {
@@ -1376,7 +1376,7 @@
                 "ApiLambdaPermissionApiGateway"
               ]
             },
-            "ApiGatewayDeployment1734026129955": {
+            "ApiGatewayDeployment1734193658468": {
               "Type": "AWS::ApiGateway::Deployment",
               "Properties": {
                 "RestApiId": {
@@ -1459,7 +1459,7 @@
             "ApiLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "ApiLambdaVersionb5htO5SU9RaaZ0BjnsBBxQHMP1otUOXLOCLjKPaEN4"
+                "Ref": "ApiLambdaVersionIq0y8qLHUQYrSWdf1XKZ2RD9iLmx2bC4uiWLe72ba3E"
               },
               "Export": {
                 "Name": "sls-omninext-dev-ApiLambdaFunctionQualifiedArn"
@@ -1520,7 +1520,7 @@
           "timeout": 6,
           "runtime": "python3.12",
           "vpc": {},
-          "versionLogicalId": "ApiLambdaVersionb5htO5SU9RaaZ0BjnsBBxQHMP1otUOXLOCLjKPaEN4"
+          "versionLogicalId": "ApiLambdaVersionIq0y8qLHUQYrSWdf1XKZ2RD9iLmx2bC4uiWLe72ba3E"
         }
       },
       "resources": {
@@ -1562,7 +1562,7 @@
     "params": {
       "tableName": "users-table-dev"
     },
-    "machineId": "80224923c3c64e484d62ff643571526d",
+    "machineId": "467ac63fe6617a23ff745034fab5ecb8",
     "stage": "dev",
     "accessKeyV2": "<REDACTED>",
     "accessKeyV1": "<REDACTED>",
@@ -1607,12 +1607,12 @@
     "serviceUniqueId": "arn:aws:cloudformation:eu-central-1:448049791400:stack/omninext-dev/58b12780-b8ae-11ef-9d3d-0ade5ef66e99",
     "serviceProviderAwsCfStackId": "arn:aws:cloudformation:eu-central-1:448049791400:stack/omninext-dev/58b12780-b8ae-11ef-9d3d-0ade5ef66e99",
     "serviceProviderAwsCfStackCreated": "2024-12-12T17:27:22.755Z",
-    "serviceProviderAwsCfStackUpdated": "2024-12-12T17:55:49.426Z",
+    "serviceProviderAwsCfStackUpdated": "2024-12-14T16:27:55.320Z",
     "serviceProviderAwsCfStackStatus": "UPDATE_COMPLETE",
     "serviceProviderAwsCfStackOutputs": [
       {
         "OutputKey": "ApiLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-central-1:448049791400:function:omninext-dev-api:7",
+        "OutputValue": "arn:aws:lambda:eu-central-1:448049791400:function:omninext-dev-api:9",
         "Description": "Current Lambda function version",
         "ExportName": "sls-omninext-dev-ApiLambdaFunctionQualifiedArn"
       },
